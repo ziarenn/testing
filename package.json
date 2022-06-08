@@ -1,0 +1,20 @@
+{
+  "name": "asyncsample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script2.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Kacper Żarna",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.14.1"
+  },
+  "dependencies": {
+    "happy-dom": "^5.0.0"
+  }
+}
