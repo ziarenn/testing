@@ -1,4 +1,4 @@
-import { it, expect, vi } from "vitest";
+import { it, expect, vi, beforeAll } from "vitest";
 import { x } from "./script2.js";
 
 import fs from "fs";
@@ -8,10 +8,10 @@ import { Window } from "happy-dom";
 const window = new Window();
 const document = window.document;
 const htmlDocumentPath = path.join(process.cwd(), "index.html");
-
 const htmlContent = fs.readFileSync(htmlDocumentPath).toString();
 document.write(htmlContent);
 vi.stubGlobal("document", document);
+
 
 it("should render an option element", () => {
   // zasymuluj input
